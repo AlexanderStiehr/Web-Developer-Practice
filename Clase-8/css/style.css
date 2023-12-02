@@ -27,5 +27,10 @@
 .quinto-div{
     width: 200px;
     height: 200px;
-    background-image: linear-gradient(circle, gold,green;)
+    background-image: radial-gradient(circle, gold,green);
+}
+.sexto-div{
+    width: 200px;
+    height: 200px;
+    background-image: radial-gradient(ellipse 250px 100px, brown, blue);
 }
