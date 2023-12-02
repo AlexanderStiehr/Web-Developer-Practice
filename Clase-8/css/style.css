@@ -4,23 +4,28 @@
     flex-wrap: wrap;
 }
 .primer-div{
-    width: 300px;
-    height: 300px;
+    width: 200px;
+    height: 200px;
     background-image: linear-gradient(red, blue);
     /* background-image: linear-gradient(to top, red, black); */
 }
 .segundo-div{
-    width: 300px;
-    height: 300px;
+    width: 200px;
+    height: 200px;
     background-image: linear-gradient(to top, red, black);
 }
 .tercer-div{
-    width: 300px;
-    height: 300px;
+    width: 200px;
+    height: 200px;
     background-image: linear-gradient(to left, red, black);
 }
 .cuarto-div{
-    width: 300px;
-    height: 300px;
+    width: 200px;
+    height: 200px;
     background-image: linear-gradient(to right, red, black, yellow);
+}
+.quinto-div{
+    width: 200px;
+    height: 200px;
+    background-image: linear-gradient(circle, gold,green;)
 }
