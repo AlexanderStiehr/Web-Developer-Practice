@@ -1,0 +1,120 @@
+<!-- ctrl + } --> <!-- ctrl + k y luego c -->
+<!-- Inicio de html -->
+<!-- Etiqueta que nos menciona el tipo de documento -->
+<!DOCTYPE html>
+<!-- Determinan donde empieza y termina la estructura básica de html -->
+<html lang="en">
+
+<!-- Eiqueta head: brinda meta información a los motores de búsqueda -->
+<head>
+    <!-- Determina el tipo de caracteres -->
+    <meta charset="UTF-8" />
+    <!-- Etiqueta que hace que nuestra web se adapte al ancho de diferentes dipositivos -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Le brinda el nombre a la pestaña del buscador -->
+    <title>Clase - 2</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<!-- Body: nos permite que nuestro contenido se vea en el buscador, esto es lo que va a ver el usuario -->
+<body>
+    <!-- header, main, footer -->
+    <header>
+        <nav>
+            <a href="index.html"> Inicio </a>
+            <a href="./pages/quienes.html"> Quienes </a>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Te damos la bienvenida</h1>
+        <section>
+            <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorum
+                neque ea molestiae ducimus, odit itaque quo ut quidem ipsa voluptatem
+                esse impedit vero obcaecati, consequatur omnis quis voluptas? Alias,
+                omnis.
+            </p>
+        </section>
+        <section>
+            <ol>
+                <li> Poner a calentar el agua </li>
+                <li> Cambiar la yerba </li>
+                <li> Poner agua en el termo </li>
+                <li> Cebar el mate </li>
+                <li> Disfrutar </li>
+            </ol>
+        </section>
+        <hr>
+        <h2>Formulario de contacto</h2>
+        <p>Por favor, complete el formulario a continuación</p>
+        <article>
+            <!-- Define un formulario -->
+            <form>
+                <!-- fieldset: agrupa elementos relacionados -->
+                <fieldset>
+                    <!-- legend: describe la utilidad del formulario -->
+                    <legend> Información Personal </legend>
+
+                    <div>
+                        <label>Nombre:</label>
+                        <input type="text" required placeholder="Ingrese su nombre">
+                    </div>
+                    <br>
+                    <div>
+                        <label>Apellido:</label>
+                        <input type="text" required placeholder="Ingrese su apellido">
+                    </div>
+                    <br>
+                    <div>
+                        <label>Color a elegir:</label>
+                        <label>Verde</label>
+                        <input type="radio">
+                        <label>Naranja</label>
+                        <input type="radio">
+                    </div>
+                    <br>
+                    <div>
+                        <label>País:</label>
+                        <select>
+                            <option>Seleccionar país</option>
+                            <option>Argentina</option>
+                            <option>Colombia</option>
+                            <option>México</option>
+                        </select>
+                    </div>
+                    <br>
+                    <div>
+                        <label>Comentarios</label>
+                        <textarea cols="20" rows="5"></textarea>
+                    </div>
+                    <br>
+                    <div>
+                        <label>Correo Electrónico:</label>
+                        <input type="email" placeholder="hola@ejemplo.com">
+                    </div>
+                    <br>
+                    <div>
+                        <label>Teléfono</label>
+                        <input type="number" placeholder="Ingrese su teléfono">
+                    </div>
+                    <br>
+                    <div>
+                        <input type="checkbox">
+                        <label>Suscribirse al newsletter</label>
+                    </div>
+                    <br>
+                    <button type="submit">Enviar</button>
+                </fieldset>
+
+            </form>
+        
+        </article>
+    </main>
+
+    <footer>
+        <a href="https://tiktok.com">TikTok</a>
+    </footer>
+
+</body>
+</html>

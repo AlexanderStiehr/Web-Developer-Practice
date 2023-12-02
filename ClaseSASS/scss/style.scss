@@ -1,0 +1,60 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+@import "partials/header";
+@import "partials/contacto";
+@import "partials/mixins";
+@import "partials/extends";
+
+// body{
+//     background-color: brown;
+// }
+
+// Creamos una variable
+// $color-fondo: chocolate;
+// $tipografia: Verdana, Geneva, Tahoma, sans-serif;
+
+// header{
+//     background-color: chocolate;
+//     nav{
+//         text-align: center;
+//         display: flex;
+//         justify-content: space-around;
+//         a{
+//             color: aliceblue;
+//             font-family: Verdana, Geneva, Tahoma, sans-serif;
+//             text-decoration: none;
+//             font-size: xx-large;
+//             &:hover{
+//                 color: black;
+//                 font-weight: 300;
+//                 text-decoration: underline;
+//             }
+//         }
+//     }
+// }
+
+main{
+    @include flex;
+    .card{
+        width: 300px;
+        padding: 15px;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+        margin-top: 20px;
+        transition: box-shadow 0.3s ease-in-out;
+        &:hover{
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+        img{
+            width: 100%;
+            height: fit-content;
+        }
+    }
+}
+
+footer{
+    @extend .footer;
+}

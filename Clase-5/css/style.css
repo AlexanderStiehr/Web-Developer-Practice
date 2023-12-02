@@ -1,0 +1,58 @@
+/* Formateamos los valores */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Aplicamos estilos al header */
+header{
+    background-color: #7052ff;
+}
+header nav{
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+header nav a{
+    color: #fef6cd;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-size: x-large;
+}
+header nav a:hover{
+    color: black;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+/* Aplicamos estilos al main*/
+main{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+/* Aplicamos estilos de ancho a las card */
+main .card{
+    width: 300px;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    margin-top: 20px;
+    transition: box-shadow 0.3s ease-in-out;
+}
+main .card:hover{
+    /* Arriba - Derecha - Abajo */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+/* Aplicamos estilos a las img respecto a las card */
+main .card img{
+    width: 100%;
+    height: fit-content;
+}
+
+.img-propia{
+    width: 100%;
+    height: 400px;
+}

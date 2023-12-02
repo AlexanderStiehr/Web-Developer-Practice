@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+nav{
+    background-color: #333;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 5px;
+    flex-wrap: wrap;
+    margin-bottom: 5px;
+}
+nav a{
+    color: white;
+    text-decoration: none;
+    font-size: xx-large;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+/* Diseñamos el frid de la sección principal */
+.main{
+    border: 1px solid black;
+    margin: 5px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 200px);
+    /* gap: 10px; */
+    grid-template-areas: 
+    "area1 area2 area3"
+    "area4 area5 area6"
+    "area7 area8 area9";
+}
+.area {
+    border: 1px solid black;
+}
+
+#area1{
+    background-color: #ff5733;
+    grid-area: area1;
+}
+#area2{
+    background-color: #33ff57;
+    grid-area: area2;
+}
+#area3{
+    background-color: #33b5ff;
+    grid-area: area3;
+}
+#area4{
+    background-color: #ffd633;
+    grid-area: area4;
+}
+#area5{
+    background-color: #a533ff;
+    grid-area: area5;
+}
+#area6{
+    background-color: #33ff96;
+    grid-area: area6;
+}
+#area7{
+    background-color: #ff336f;
+    grid-area: area7;
+}
+#area8{
+    background-color: #33ffaf;
+    grid-area: area8;
+}
+#area9{
+    background-color: #ff33c6;
+    grid-area: area9;
+}
+
+@media (max-width: 768px){
+    .main{
+        border: 1px solid black;
+        margin: 5px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(4, 200px);
+        /* gap: 10px; */
+        grid-template-areas: 
+        "area1 area2 area3"
+        "area4 area4 area5"
+        "area6 area7 area7"
+        "area8 area8 area9";
+    }
+}
+@media (max-width: 320px){
+    .main{
+        border: 1px solid black;
+        margin: 5px;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(9, 100px);
+        /* gap: 10px; */
+        grid-template-areas: 
+        "area1"
+        "area2"
+        "area3"
+        "area4"
+        "area5"
+        "area6"
+        "area7"
+        "area8"
+        "area9";
+    }
+}
