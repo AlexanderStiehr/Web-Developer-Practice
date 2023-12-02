@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Animaciones, transiciones y transformaciones </title>
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
 
@@ -20,6 +22,21 @@
     <div class="quinto-div"></div>
     <div class="sexto-div"></div>
 </div>
+<div class="padre-dos">
+    <div class="rotate-uno">div</div>
+    <div class="skew-horizontal"></div>
+    <div class="escalar"></div>
+    <button class="opacidad">Click Aquí</button>
+    <div class="animaciones"></div>
+</div>
+<h2 class="animate__animated animate__bounce">Soy una animación con animate</h2>
+<h3 class="animate__animated animate__bounceIn">Otra animación</h3>
+<div class="flipear" data-aos="fade-up-left">Soy animación de AO</div>
+
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 
 </body>
 </html>

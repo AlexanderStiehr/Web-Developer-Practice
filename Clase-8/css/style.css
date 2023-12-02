@@ -17,7 +17,7 @@
 .tercer-div{
     width: 200px;
     height: 200px;
-    background-image: linear-gradient(to left, red, black);
+    background-image: linear-gradient(to left, red, black, purple);
 }
 .cuarto-div{
     width: 200px;
@@ -33,4 +33,74 @@
     width: 200px;
     height: 200px;
     background-image: radial-gradient(ellipse 250px 100px, brown, blue);
+}
+
+.padre-dos{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 15px;
+}
+.rotate-uno{
+    width: 200px;
+    height: 200px;
+    background-color: blue;
+    transform: rotate(100deg);
+}
+.skew-horizontal{
+    width: 200px;
+    height: 200px;
+    background-color: rgb(0, 255, 13);
+    transform: skewX(45deg);
+}
+.escalar{
+    width: 200px;
+    height: 200px;
+    background-color: brown;
+    transition: transform 0.3s ease;
+}
+.escalar:hover{
+    transform: scale(1.5);
+}
+.opacidad{
+    transform: opacity 0.5s ease;
+}
+.opacidad:hover{
+    opacity: 0.5;
+}
+/* .animaciones{
+    width: 200px;
+    height: 200px;
+    background-color: royalblue;
+    animation-name: aparecer;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+    animation-duration: 2s;
+}
+@keyframes aparecer {
+    0%{
+        width: 200px;
+        height: 200px;
+        background-color: aquamarine;
+    }
+    65%{
+        width: 250px;
+        height: 300px;
+        background-color: aqua;
+    }
+    90%{
+        width: 500px;
+        height: 50px;
+    }
+    100%{
+        width: 300px;
+        height: 300px;
+        background-color: blue;
+    }
+} */
+
+.flipear{
+    width: 200px;
+    height: 200px;
+    background-color: aqua;
 }
